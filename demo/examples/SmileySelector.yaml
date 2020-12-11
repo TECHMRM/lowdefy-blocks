@@ -1,0 +1,64 @@
+- id: default
+  type: SmileySelector
+- id: properties.title
+  type: SmileySelector
+  properties:
+    title: Selector title
+- id: properties.disabled
+  type: SmileySelector
+  properties:
+    disabled: true
+- id: properties.size = small
+  type: SmileySelector
+  properties:
+    size: small
+- id: properties.size = large
+  type: SmileySelector
+  properties:
+    size: large
+- id: properties.strokeColor
+  type: SmileySelector
+  properties:
+    strokeColor: '#00f'
+- id: properties.disabledColor
+  type: SmileySelector
+  properties:
+    disabled: true
+    disabledColor: '#00f'
+- id: properties.label.disabled = true
+  type: SmileySelector
+  properties:
+    label:
+      disabled: true
+- id: properties.options = number
+  type: SmileySelector
+  properties:
+    options:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+- id: properties.options = string
+  type: SmileySelector
+  properties:
+    options:
+      - a
+      - b
+      - c
+      - d
+      - e
+- id: properties.options = object, color
+  type: SmileySelector
+  properties:
+    options:
+      - value: a
+        color: '#a23450'
+      - value: b
+        color: '#123456'
+      - value: c
+        color: '#f234f6'
+      - value: d
+        color: '#f2f456'
+      - value: e
+        color: '#f2f4f6'
