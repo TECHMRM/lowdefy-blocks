@@ -34,6 +34,35 @@
           "default": "default",
           "description": "Size of the block."
         },
+        "options": {
+          "type": "array",
+          "description": "Alternative input options.",
+          "items": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "number"
+              },
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "value": {
+                    "description": "Option value when selected."
+                  },
+                  "color": {
+                    "type": "string",
+                    "description": "Smiley hex color."
+                  }
+                }
+              }
+            ]
+          }
+        },
         "label": {
           "type": "object",
           "description": "Label properties.",
